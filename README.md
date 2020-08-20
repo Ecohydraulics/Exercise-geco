@@ -1,6 +1,7 @@
 ### Python Programming for Water Resources Engineering and Research
 
 ![fish](https://github.com/Ecohydraulics/media/raw/master/jpg/yuba-fish.jpg)
+*<sub>Sacramento suckers in the South Yuba River (source: Sebastian Schwindt 2019).</sub>*
 
 ***
 
