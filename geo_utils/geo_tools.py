@@ -1,4 +1,4 @@
-from srs_mgmt import *
+from .srs_mgmt import *
 import itertools
 gdal.UseExceptions()
 

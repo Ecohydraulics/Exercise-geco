@@ -1,6 +1,6 @@
 import gdal
 import osr
-from geoconfig import *
+from .geoconfig import *
 
 
 def open_raster(file_name, band_number=1):

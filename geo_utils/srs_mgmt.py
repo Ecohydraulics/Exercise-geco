@@ -1,4 +1,4 @@
-from dataset_mgmt import *
+from .dataset_mgmt import *
 import urllib
 
 

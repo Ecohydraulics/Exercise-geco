@@ -39,7 +39,7 @@ class Raster:
         try:
             self.array = np.divide(self.array, constant_or_raster.array)
         except AttributeError:
-            self.array *= constant_or_raster
+            self.array /= constant_or_raster
         return self._make_raster("div")
     
 

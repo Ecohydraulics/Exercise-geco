@@ -1,5 +1,5 @@
-from raster_mgmt import *
-from shp_mgmt import *
+from .raster_mgmt import *
+from .shp_mgmt import *
 gdal.UseExceptions()
 
 
