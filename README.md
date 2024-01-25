@@ -1,6 +1,6 @@
 ### Python Programming for Water Resources Engineering and Research
 
-![fish](https://github.com/Ecohydraulics/media/raw/master/jpg/yuba-fish.jpg)
+![fish](https://github.com/Ecohydraulics/media/raw/main/jpg/yuba-fish.jpg)
 *<sub>Sacramento suckers in the South Yuba River (source: Sebastian Schwindt 2019).</sub>*
 
 ***
@@ -24,12 +24,12 @@ git clone https://github.com/Ecohydraulics/Exercise-geco.git
 
 Fish and other aquatic species rest, orient, and reproduce in a fluvial environment that represents their physical habitat. Throughout their different life stages, different fish have specific physical habitat preferences which are defined, for instance, as a function of water depth, flow velocity, and grain size of the riverbed. The so-called *Habitat Suitability Index **HSI*** can be calculated for hydraulic (water depth or flow velocity) and morphological (e.g., grain size or cover in the form of large wood) parameters individually to describe the quality of physical habitat for a fish and at a specific life stage. The figure below shows exemplary *HSI* curves for the fry, juvenile and adult life stages of rainbow trout as a function of water depth. The *HSI* curves look different in every river and should be established individually by an aquatic ecologist.
 <a name="hsi-image"></a>
-![hsi-curves](https://github.com/Ecohydraulics/media/raw/master/png/hsi-curves.png)
+![hsi-curves](https://github.com/Ecohydraulics/media/raw/main/png/hsi-curves.png)
 *Habitat Suitability Index (HSI) curves for the fry, juvenile, and adult life stages of rainbow trout in a cobble-bed river. Take care: HSI curves look different in any river and need to be established by an aquatic ecologist.*
 
 The *HSI* concept also accounts for the so-called cover habitat in the form of the *cover HSI* (*HSI<sub>cov</sub>*). Cover habitat is the result of local turbulence caused by roughness elements such as wood, boulders, or bridge piers. However, in this exercise, we will only deal with hydraulic habitat characteristics (not cover habitat).
 
-![cover-habitat](https://github.com/Ecohydraulics/media/raw/master/jpg/neckar-fish-cover.jpg)
+![cover-habitat](https://github.com/Ecohydraulics/media/raw/main/jpg/neckar-fish-cover.jpg)
 *Adult trout swimming in cover habitat created by a bridge pier in the upper Neckar River.*
 
 The combination of multiple *HSI* values (e.g., water depth-related *HSI<sub>h</sub>*, flow velocity-related *HSI<sub>u</sub>*, grain size-related *HSI<sub>d</sub>*, and/or cover *HSI<sub>cov</sub>*) results in the *combined Habitat Suitability Index **cHSI***. There are various calculation methods for combining different *HSI<sub>par</sub>* values into one *cHSI* value, where the geometric mean and the product are the most widely used deterministic combination methods: <a name="combine-methods"></a>
@@ -62,7 +62,7 @@ This exercise demonstrates the use of 2D hydrodynamic modeling results to algori
 The following flow chart illustrates the provided code and data. Functions, methods, and files to be created in this exercise are highlighted in bold, italic, *YELLOW* font.
 
 <a name="uml"></a>
-![code-structure](https://github.com/Ecohydraulics/Exercise-geco/raw/master/graphs/geo_eco_uml.png)
+![code-structure](https://github.com/Ecohydraulics/Exercise-geco/raw/main/graphs/geo_eco_uml.png)
 
 The provided *QGIS* project file `visualize_with_QGIS.qgz` helps to verify input raster datasets and results.
 
@@ -536,11 +536,11 @@ def main():
 
 A successful run of the script `create_hsi_rasters.py` should look like this (in *PyCharm*):
 
-![run-chsi](https://github.com/Ecohydraulics/Exercise-geco/raw/master/graphs/run_create_chsi_rasters.png)
+![run-chsi](https://github.com/Ecohydraulics/Exercise-geco/raw/main/graphs/run_create_chsi_rasters.png)
 
 Plotted in *QGIS*, the *cHSI* *GeoTIFF* raster should look like this:
 
-![chsi-results](https://github.com/Ecohydraulics/Exercise-geco/raw/master/graphs/ex-chsi.png)
+![chsi-results](https://github.com/Ecohydraulics/Exercise-geco/raw/main/graphs/ex-chsi.png)
 *The cHSI raster plotted in QGIS, where poor physical habitat quality (cHSI close to 0.0) is colored in red and high physical habitat quality (cHSI close to 1.0) is colored in green.*
 
 ### Result interpretation
@@ -683,11 +683,11 @@ def calculate_habitat_area(layer, epsg):
 ### Run the Usable Habitat Area calculation code
 
 A successful run of the script `calculate_habitat_area.py` should look like this (in *PyCharm*):
-![run-chsi](https://github.com/Ecohydraulics/Exercise-geco/raw/master/graphs/run_habitat_area.png)
+![run-chsi](https://github.com/Ecohydraulics/Exercise-geco/raw/main/graphs/run_habitat_area.png)
 
 Plotted in *QGIS*, the *habitat-area* shapefile looks like this (use *Categorized* symbology):
 
-![uha-results](https://github.com/Ecohydraulics/Exercise-geco/raw/master/graphs/ex-uha.png)
+![uha-results](https://github.com/Ecohydraulics/Exercise-geco/raw/main/graphs/ex-uha.png)
 *The habitat-area shapefile plotted in *QGIS* with *Categorized* symbology, where the usable habitat area UHA (cHSI > 0.4) is delineated by the hatched purple patches and their dashed outlines.*
 
 ### Result interpretation
